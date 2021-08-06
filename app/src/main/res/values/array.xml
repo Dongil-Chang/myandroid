@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location">
+        <item>지점명</item>
+        <item>서울점</item>
+        <item>부산점</item>
+        <item>대구점</item>
+        <item>광주점</item>
+        <item>목포점</item>
+    </string-array>
+</resources>

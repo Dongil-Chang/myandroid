@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#fff"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp">
+        
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="아이디"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#033439"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="이름"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#033439"/>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="이메일"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#033439"/>
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="전화번호"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#033439"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="0.5">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"
+            android:backgroundTint="#000000"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>

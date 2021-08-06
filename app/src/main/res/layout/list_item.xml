@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:background="#552164"
+       android:gravity="center"
+        android:id="@+id/txt_sub"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:text="서브"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

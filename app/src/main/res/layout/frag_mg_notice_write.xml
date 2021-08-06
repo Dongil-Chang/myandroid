@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <Spinner
+            android:id="@+id/spiner_bd_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="제목을 입력하세요"
+            android:id="@+id/edt_mg_board_title"
+            android:layout_weight="0.1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:layout_weight="0.8"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:id="@+id/btn_mg_bd_write_reset" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="등록"
+            android:backgroundTint="#ff6e2b"
+            android:textColor="#fff"
+            android:id="@+id/btn_mg_bd_write_submit"/>
+    </LinearLayout>
+
+</LinearLayout>

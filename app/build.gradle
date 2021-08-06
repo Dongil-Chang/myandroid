@@ -1,0 +1,93 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.so.storage"
+        //카카오 Sdk 19로 설정
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    /*데이터 바인딩 사용시 선언*/
+    buildFeatures{
+        dataBinding = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    // Java8 사용을 위한 build.gradle 설정
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    /* http 사용하는 라이브러리 */
+    useLibrary 'org.apache.http.legacy'
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+
+    //네이버 로그인
+    implementation 'com.naver.nid:naveridlogin-android-sdk:4.2.6'   // import from jcenter
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // naver idlogin dependencies
+    def android_x_version = "1.0.0"
+    implementation "androidx.appcompat:appcompat:$android_x_version"
+    implementation "androidx.legacy:legacy-support-core-utils:$android_x_version"
+    implementation "androidx.browser:browser:$android_x_version"
+    implementation "androidx.legacy:legacy-support-v4:$android_x_version"
+
+    //카카오
+    implementation "com.kakao.sdk:v2-user:2.4.2" // 카카오 로그인
+
+    // https://mvnrepository.com/artifact/com.github.bumptech.glide/glide
+    //인터넷에서 그림 바로 땡겨오기
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    /* CircleIndicator 사용 */
+    implementation 'me.relex:circleindicator:2.1.4'
+
+    // https://github.com/prolificinteractive/material-calendarview
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.github.prolificinteractive:material-calendarview:2.0.1'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.1.1'
+
+    // RecyclerView 라이브러리
+    implementation 'com.balysv:material-ripple:1.0.2' // for ripple effect
+
+    /* 안드로이드와 통신할수 있는 버전 가져오기 */
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient-android', version: '4.3.5.1'
+    implementation('org.apache.httpcomponents:httpmime:4.3') {
+        exclude module: "httpclient"
+    }
+
+}

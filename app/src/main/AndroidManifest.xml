@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.so.storage">
+    <!-- 인터넷 권한 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 인터넷 연결 확인-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- WIFI 연결 확인-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        >
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="true" />
+
+        <meta-data android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"/>
+        <activity android:name="com.so.storage.LoadingActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <!--카카오-->
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <!--Redirect URI: "kakao{NATIVE_APP_KEY}://oauth"-->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao9b9dffff9c49fc3d12de1057c58352b8"/> <!--카카오 네이티브 앱 키값-->
+
+            </intent-filter>
+        </activity>
+        <activity android:name="com.so.storage.MainActivity" />
+    </application>
+</manifest>

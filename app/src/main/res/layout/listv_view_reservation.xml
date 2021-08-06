@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp">
+        
+        <TextView
+            android:id="@+id/product_type"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="테스트"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#033439"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/booking_start"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="테스트"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#033439"/>
+        <TextView
+            android:id="@+id/booking_end"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="테스트"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#033439"/>
+        <TextView
+            android:id="@+id/location_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="테스트"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#033439"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="0.5">
+
+        <Button
+            android:id="@+id/listv_reservation_cancel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"
+            android:backgroundTint="#000000"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

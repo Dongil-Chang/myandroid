@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="59dp"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:layout_marginTop="20dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@drawable/side_nav_bar">
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="Navigation header"
+        android:padding="8dp"
+        android:src="@drawable/toolbarlogo" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/solid_button"
+        android:backgroundTint="#B8E9FF"
+        android:text="로그인"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</LinearLayout>-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="59dp"
+    android:gravity="bottom"
+    android:layout_marginTop="20dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@drawable/side_nav_bar">
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="Navigation header"
+        android:layout_marginLeft="10dp"
+        android:padding="8dp"
+        android:src="@drawable/toolbarlogo" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/solid_button"
+        android:backgroundTint="#B8E9FF"
+        android:text="로그인"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/solid_button"
+        android:backgroundTint="#B8E9FF"
+        android:text="로그아웃"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+</RelativeLayout>

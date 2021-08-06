@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:text="예약내역이 없습니다."
+        android:gravity="center_vertical|center"
+        android:textSize="30dp"
+        android:layout_marginTop="45dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="예약하러가기"
+        android:layout_gravity="center"
+        android:backgroundTint="#89CFCE"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="예약방법 보러가기"
+        android:layout_gravity="center"
+        android:backgroundTint="#89CFCE"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ffffff"
+        android:layout_gravity="center"
+        android:text="문의하기"
+        android:textColor="#000000"/>
+
+</LinearLayout>

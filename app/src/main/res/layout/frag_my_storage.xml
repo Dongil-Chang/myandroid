@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="(사용자이름)님의 창고 상태"
+        android:gravity="center_vertical|center"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="온도"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#00ffff"
+            android:hint="온도 값이 들어올 곳"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="습도"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#00ffff"
+            android:hint="습도 값이 들어올 곳"/>
+
+    </LinearLayout>
+
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#DDA0A6E3"
+        android:text="(온도 및 습도 표시될 공간)"
+        android:gravity="center_vertical|center"/>-->
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center_vertical|center"
+        android:id="@+id/cctvView"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="문 열림 설정"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="문 열림 활성화/비활성화"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/iotset"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="설정"
+        android:backgroundTint="#DDC1F2EE"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/justcheckBtn_1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="확인용 임시버튼"
+        android:backgroundTint="#DDC1F2EE"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ffffff"
+        android:layout_gravity="center"
+        android:text="문의하기"
+        android:textColor="#000000" />
+
+</LinearLayout>

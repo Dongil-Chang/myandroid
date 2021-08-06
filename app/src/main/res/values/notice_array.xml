@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="title">
+        <item>12번째 공지사항입니다.</item>
+        <item>11번째 공지사항입니다.</item>
+        <item>10번째 공지사항입니다.</item>
+        <item>9번째 공지사항입니다.</item>
+        <item>8번째 공지사항입니다.</item>
+        <item>7번째 공지사항입니다.</item>
+        <item>6번째 공지사항입니다.</item>
+        <item>5번째 공지사항입니다.</item>
+        <item>4번째 공지사항입니다.</item>
+        <item>3번째 공지사항입니다.</item>
+        <item>2번째 공지사항입니다.</item>
+        <item>1번째 공지사항입니다.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:title="메인화면"
+            android:icon="@drawable/menu_icon_box"
+            />
+        <item
+            android:id="@+id/nav_notice"
+            android:title="공지사항"
+            android:icon="@drawable/menu_icon_box"/>
+        <item
+            android:id="@+id/nav_event"
+            android:title="이벤트"
+            android:icon="@drawable/menu_icon_box"/>
+        <item
+            android:id="@+id/nav_guide"
+            android:title="이용안내"
+            android:icon="@drawable/menu_icon_box"/>
+        <item
+            android:id="@+id/nav_faq"
+            android:title="문의하기"
+            android:icon="@drawable/menu_icon_box"/>
+
+    </group>
+
+    <item android:id="@+id/myinfo"
+        android:title="나의 정보"
+        android:visible="true" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_mypage"
+                    android:title="마이페이지"
+                    android:icon="@drawable/menu_icon_box"/>
+                <item
+                    android:id="@+id/nav_reservation"
+                    android:title="예약하기"
+                    android:icon="@drawable/menu_icon_box"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:id="@+id/managerinfo"
+        android:title="관리 모드"
+        android:visible="false" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_memberlist"
+                    android:title="회원목록"
+                    android:icon="@drawable/menu_icon_box"/>
+                <item
+                    android:id="@+id/nav_reservationlist"
+                    android:title="예약내역"
+                    android:icon="@drawable/menu_icon_box"/>
+                <item
+                    android:id="@+id/nav_mg_board"
+                    android:title="게시판 관리"
+                    android:icon="@drawable/menu_icon_box"/>
+            </group>
+        </menu>
+    </item>
+</menu>
